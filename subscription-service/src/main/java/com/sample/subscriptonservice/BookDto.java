@@ -1,19 +1,15 @@
-package com.sample.bookservice;
+package com.sample.subscriptonservice;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
-@Table(name = "books")
-@NoArgsConstructor
-@AllArgsConstructor
 @Setter
 @Getter
-public class Book {
-    @Id
+@AllArgsConstructor
+@NoArgsConstructor
+public class BookDto {
     private String book_id;
     private String book_name;
     private String author;
@@ -21,4 +17,3 @@ public class Book {
     private int total_copies;
 
 }
-
